@@ -7,7 +7,7 @@ Template para proyecto Django desplegados en Render.
 Para utilizar este template, sigue los pasos a continuación:
 
 ```bash
-   django-admin startproject -e py,sh,yaml,md, --template=../render-docker-django PROJECT_NAME .
+   django-admin startproject -e py,sh,yaml,md,toml,lock --template=../render-docker-django PROJECT_NAME .
 ```
 
 ## Descripción

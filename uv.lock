@@ -26,7 +26,7 @@ wheels = [
 ]
 
 [[package]]
-name = "render-docker-django"
+name = "{{ project_name }}"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

@@ -18,7 +18,7 @@ RUN python manage.py collectstatic --noinput
 FROM nginx:alpine
 
 RUN apk add --no-cache python3 py3-pip && \
-    pip install uv
+    pipx install uv
 
 WORKDIR /app
 
@@ -27,9 +27,6 @@ COPY --from=builder /usr/local/bin /usr/local/bin
 COPY --from=builder /app /app
 
 COPY nginx.conf /etc/nginx/nginx.conf
-
-ENV DJANGO_SETTINGS_MODULE={{ project_name }}.config.settings \
-    PYTHONUNBUFFERED=1
 
 EXPOSE 80
 
