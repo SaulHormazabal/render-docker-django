@@ -2,13 +2,21 @@
 
 Template para proyecto Django desplegados en Render.
 
+## Uso del Template
+
+Para utilizar este template, sigue los pasos a continuación:
+
+```bash
+   django-admin startproject -e py,sh,yaml,md, --template=../render-docker-django PROJECT_NAME .
+```
+
 ## Descripción
 
 Este es un template de proyecto Django configurado para ser desplegado en Render usando Docker. Incluye configuración de Nginx como proxy reverso y está optimizado para producción.
 
 ## Estructura del Proyecto
 
-```
+```txt
 {{ project_name }}/
 ├── {{ project_name }}/
 │   ├── apps/                 # Aplicaciones Django
